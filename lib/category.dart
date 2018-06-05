@@ -18,11 +18,12 @@ class Category extends StatelessWidget {
   // TODO: You'll need the name, color, and iconLocation from main.dart
 
   final String name;
-final ColorSwatch colorSwatch;
-final IconData iconLocation;
+  final ColorSwatch colorSwatch;
+  final IconData iconLocation;
   const Category({
     @required this.name,
-   @required this.iconLocation,
+    @required this.iconLocation,
+    @required this.colorSwatch,
   });
 
   /// Builds a custom widget that shows [Category] information.
@@ -35,11 +36,11 @@ final IconData iconLocation;
   // See https://docs.flutter.io/flutter/material/Theme-class.html
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.transparent,
+        color: Colors.transparent,
         child: Container(
             height: 100.0,
             child: InkWell(
-               borderRadius: BorderRadius.circular(50.0),
+              borderRadius: BorderRadius.circular(50.0),
               onTap: () {
                 print('I was tapped');
               },

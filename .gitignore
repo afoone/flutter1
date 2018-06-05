@@ -9,5 +9,5 @@ build/
 *.lock
 .flutter-plugins
 
-idea/
+.idea/
 *.iml
