@@ -27,18 +27,33 @@ class UnitConverterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Unit Converter',
+      title: 'LaurApp',
       home: Scaffold(
         backgroundColor: Colors.green[100],
         appBar: AppBar(
-          title: Text('LaurApp'),
+          title: Text('LaurApp', style: TextStyle(
+            fontSize: 24.0,
+          ), 
+          ),
         ),
         body: Container(
           // TODO: Determine what properties you'll need to pass into the widget
-          child: Category(
-            name: 'Hola Laura Guapa',
-            iconLocation: Icons.cake,
-            colorSwatch: Colors.purple,
+          child: Padding(
+            padding: EdgeInsets.all(10.0),
+            child: ListView(
+              children: <Widget>[
+                Category(
+                  name: 'Hola Laura Guapa',
+                  iconLocation: Icons.cake,
+                  colorSwatch: Colors.purple,
+                ),
+                Category(
+                  name: 'Hola Papi Guapo',
+                  iconLocation: Icons.beach_access,
+                  colorSwatch: Colors.purple,
+                ),
+              ],
+            ),
           ),
         ),
       ),
