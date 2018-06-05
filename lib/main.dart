@@ -30,7 +30,10 @@ class UnitConverterApp extends StatelessWidget {
       title: 'Unit Converter',
       home: Scaffold(
         backgroundColor: Colors.green[100],
-        body: Center(
+        appBar: AppBar(
+          title: Text('LaurApp'),
+        ),
+        body: Container(
           // TODO: Determine what properties you'll need to pass into the widget
           child: Category(
             name: 'Hola Laura Guapa',
