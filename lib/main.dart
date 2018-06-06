@@ -33,7 +33,7 @@ class UnitConverterApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('LaurApp', style: TextStyle(
             fontSize: 24.0,
-          ), 
+          ),
           ),
         ),
         body: Container(

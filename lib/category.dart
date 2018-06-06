@@ -43,6 +43,10 @@ class Category extends StatelessWidget {
               borderRadius: BorderRadius.circular(50.0),
               onTap: () {
                 print('I was tapped');
+                showDialog(context: context,
+                child: AlertDialog(
+                   title: Text(this.name),
+                ));
               },
               child: Row(
                 children: <Widget>[
